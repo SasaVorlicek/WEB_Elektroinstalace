@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles_js/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles_js/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KÍLHETS | KONTAKT</title>
+    <link rel="icon" href="images/favicon.png" type = "image/x-icon">
+
+    <script src="styles_js/hamburger.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-flex-wrap">
+<!-- HEADER LOGO -->
+            <div class="header-logo-wrap">
+                <a href="index.html">
+                    <img class="header-logo" src="images/logo.png" alt="Logo stránky">
+                </a>
+            </div>
+<!-- HAMBURGER -->
+        <div class="dropdown">
+            <button class="fa fa-bars hamburger is-active" onclick="myFunction()">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">SLUŽBY</a>
+                <a href="reference.html">REFERENCE</a>
+                <a class="momentalni_stranka_ham" href="kontakt.html">KONTAKT</a>
+            </div>
+        </div>
+<!-- NAVBAR -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="reference.html">REFERENCE</a></li>
+                <li><a href="index.html">SLUŽBY</a></li>
+                <li><a class="momentalni_stranka" href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+<!-- H. TEXT -->
+        <div class="header-text-wrap">
+            <div class="header-text-logo">
+                KÍLHETS
+            </div>
+        </div>
+    </div>
+    <div class="prouzek">
+        <a class="zdroje" href="zdroje.html">ZDROJE</a>
+    </div>
+    </header>
+    <main>
+        <article class="parallax">
+            <div class="main-border-wrap">
+                <h1>ELEKTROINSTALACE KÍLHETS</h1>
+                <h3>KONTAKT</h3>
+                <p>Neváhejte nás kontaktovat pro využití našich služeb</p>
+                <p>Požadavky na práci přijímáme 365 dní v roce bez výjimek</p>
+                <p>Práci si u nás domluvíte do sedmi dnů od podání požadavku</p>
+            </div>
+        </article>
+        <section class="content-wrapper">
+            <div class="flex-center">
+                <div class="card card-long kon">
+                    <h2>Kontaktní formulář</h2>
+                    <label>Jméno a příjmení</label>
+                    <div class="card-long-inside-inputs">
+                        <input class="ref-input" type="text" required>
+                    </div>
+                    <label>E-mail</label>
+                    <div class="card-long-inside-inputs">
+                        <input class="ref-input" type="text" placeholder="jan.novak@seznam.cz" required>
+                    </div>
+                    <label>Zvolená služba</label>
+                    <div class="flex-center">
+                        <select class="ref-input">
+                            <option>Elektroinstalace</option>
+                            <option>Průmyslová elektromontáž</option>
+                            <option>Servis / revize</option>
+                        </select>
+                    </div>
+                    <div class="kon-checkboxes">
+                        <label>Mám zájem o</label>
+                        <div class="flex-center checkbox">
+                            <input class="kon-checkbox" type="checkbox" id="1">
+                            <label for="1">Konzultaci</label>
+                        </div>
+                        <div class="flex-center checkbox-2">
+                            <input class="kon-checkbox" type="checkbox" id="2">
+                            <label for="2">Cenovou nabídku</label>
+                        </div>
+                    </div>
+                    <label>Zpráva</label>
+                    <div class="card-long-inside-inputs">
+                        <textarea class="kon-textarea ref-input big-input"></textarea>
+                    </div>
+                    <div class="flex-center kon-button">
+                        <button class="ref-button "><a href="kontakt.html">ODESLAT</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-center">
+                <div class="kontakt-card card">
+                    <div class="text-kontakt">
+                        <h3>ELEKTROINSTALACE KÍLHETS</h3>
+                        <p><b>ADRESA: </b> Masarykova 3, Liberec</p>
+                        <p><b>PSČ: </b> 460 01 </p>
+                        <p><b>ZAVOLEJTE NÁM: </b> +420 603 011 871</p>
+                        <p><b>EMAIL: </b>kilhets.elektro@kilhets.cz</p>
+                        <br>
+                        <p><b>IČO: </b> 60302843</p>
+                        <p><b>DIČ: </b> 5201231423</p>
+
+                    </div>
+                    <div class="mapa-kontakt"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.130107014963!2d15.062454715743149!3d50.77316167952117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936a0b62f8e83%3A0x27e91649b311f9a0!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgc3Ryb2puw60gYSBlbGVrdHJvdGVjaG5pY2vDoSBhIFZ5xaHFocOtIG9kYm9ybsOhIMWha29sYQ!5e0!3m2!1scs!2scz!4v1654779370043!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>

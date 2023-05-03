@@ -1,0 +1,637 @@
+@import "fonts.css";
+
+:root {
+    --main-red-color: #C44536;
+    --list-hover-color: rgb(247, 246, 246);
+    --border-color: #772E25;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif ;
+}
+
+.header-flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    z-index: 2;
+    
+    background-color: white;
+}
+
+/*---HEADER LOGO---*/
+.header-logo-wrap {
+    width: 294.92px;
+    margin-left: 50px;
+}
+
+ .header-logo {
+    height: 90px ;
+    margin-top: 82px;
+}
+
+
+/*---NAVBAR--- */
+.navbar {
+    display: flex;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto-Medium;
+}
+
+nav ul li a {
+    margin: 0 8px;
+    border: 20px solid white;
+    background-color: white;
+    transition: background-color 0.35s, border 0.35s;
+}
+
+nav ul li a:hover {
+    border: 26px solid var(--list-hover-color);
+    background-color: var(--list-hover-color);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+}
+
+.momentalni_stranka{
+    border: 26px solid #dbdfdc !important;
+    background-color: #dbdfdc !important;
+    box-shadow: none !important;
+}
+
+/*---HAMBURGER NAVBAR---*/
+
+.hamburger {
+      border: none;
+      background-color: white;
+      margin-right: 20px;
+      cursor: pointer;
+      height: 40px;
+      width: 50px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown .fa {
+    font-size: 30px;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 40px;
+    background-color: #f1f1f1;
+    min-width: 270px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.momentalni_stranka_ham {
+    background-color: #c8ccc9 !important;
+}
+
+/*---HEADER TEXT---*/
+.header-text-wrap {
+    margin-right: 50px;
+    width: 294.92px;
+}
+
+.header-text-logo {
+    border-left: 2px solid var(--main-red-color);
+    border-right: 2px solid var(--main-red-color);
+    padding: 15px;
+    color: var(--main-red-color);
+    font-family: Roboto-Bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+ .prouzek {
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    background: linear-gradient(var(--main-red-color),#b84b3d);
+    height: 58px;
+    width: 100%;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.9);
+}
+
+
+/* ---MAIN FOTO-BACKGROUND / PARALLAX--- */
+.parallax {
+    background: linear-gradient(var(--border-color),var(--main-red-color));
+    background-image: url(../images/background_foto.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.8);
+    
+}
+
+.main-border-wrap {
+    border: 3px solid var(--main-red-color);
+    border-radius: 3px;
+    background-color: var(--main-red-color);
+
+    opacity: 0.95;
+    padding: 3em;
+
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.main-border-wrap h3 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.main-border-wrap h1 {
+    font-family: Roboto-Bold;
+    margin-top: -10px;
+}
+
+
+/*---HOME CONTENT--- */
+.content-wrapper {
+    max-width: 1300px; 
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 70px;
+
+    background-color:#f1f1f1;
+}
+
+.card-flex-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    
+
+    border: 6px solid var(--border-color);
+    border-radius: 3px;
+    background-color: var(--main-red-color);
+    color: white;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
+
+    text-align: center;
+    font-size: 16px;
+    padding: 0 20px 20px 20px;
+}
+
+.card-long {
+    width: 800px;
+    height: 350px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+.card-long h2 {
+    margin-top: 90px;
+}
+
+.card h3 {
+    margin-top: 50px;
+}
+
+.slu a {
+    color: white;
+}
+
+.slu a::after{
+    content: "\1F851";
+}
+
+.slu a:hover{
+    color: rgb(224, 205, 205);
+}
+
+
+/*---REFEREMCE---*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.card-long-inside-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ref h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;;
+}
+
+.ref p {
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+
+.ref-c {
+    height: 200px;
+}
+
+.ref-c h3 {
+    margin-top: 20px;
+}
+
+.ref-input {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(247, 234, 234);
+    width: 260px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.35s;
+}
+
+.big-input {
+    width: 600px;
+    height: 130px;
+}
+
+.ref-input:focus {
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.4);
+}
+
+.ref-button {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: var(--border-color);
+
+    width: 120px;
+    height: 45px;
+    transition: background-color 0.35s, box-shadow 0.35s;
+}
+
+.ref-button:hover {
+    background-color: #8b4c44;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ref-button a {
+    color: white;
+    font-size: 15px;
+}
+
+.ref-button a:hover{
+    color: rgb(248, 237, 237);
+}
+
+/*---KONTAKT*/
+.kon {
+    height: 650px;
+}
+
+.kontakt-card {
+    width: 100%;
+    height: 600px;
+
+    border: none;
+    border-radius: 0px;
+
+    margin-top: 40px;
+    padding: 0px;
+    display: flex;
+}
+
+.kon h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;;
+}
+
+.kon .ref-input {
+    margin-bottom: 15px;
+}
+
+.kon select {
+    margin-bottom: 15px;
+}
+
+.kon-button {
+    margin: 15px 0;
+}
+
+.checkbox {
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.checkbox-2 {
+    margin-bottom: 15px;
+}
+
+.kon-checkbox {
+    margin: auto 0;
+    margin-right: 5px;
+    
+    border: 1px solid black;
+    background-color: rgb(247, 234, 234);
+    height: 18px;
+    width: 18px;
+}
+
+.text-kontakt {
+    width: 50%;
+    height: 100%;
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text-kontakt p,h3 {
+    font-size: 20px;
+    margin: 0.5em;
+}
+
+.mapa-kontakt {
+    width: 40%;
+    height: 100%;
+}
+
+.mapa-kontakt iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*---ZDROJE---*/
+.zdroje {
+    position: absolute;
+    bottom: 7px;
+    right: 60px;
+    font-size: 17px;
+    color:white;
+    border: white solid 1px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.zdroje-seznam {
+    list-style: none;
+    padding: 0;
+}
+
+.zdroje-seznam li {
+    margin: 6px 0;
+    font-size: 19px;
+}
+
+.zdroje-seznam li a {
+    text-decoration: underline;
+    color: white;
+}
+
+.zdroje-texty {
+    margin-top: 45px;
+}
+
+.main-border-wrap h2 {
+    font-size: 40px;
+}
+
+
+
+/*---MEDIA PRVKY---*/
+@media(max-width: 1150px) {
+    .header-text-wrap {
+        display: none;
+    }
+    .navbar {
+        margin-right: 40px;
+    }
+}
+
+@media(max-width: 810px) {
+    .dropdown {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+}
+
+@media(max-width: 900px) {
+    .card-long {
+        width: 600px;
+        height: 150px;
+        font-size: 15px;
+    }
+    .card h2 {
+        margin-top: 50px;
+    }
+    .card {
+        height: 220px;
+    }
+    .card-flex-wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+    }
+    .ref h2 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .big-input {
+        height: 50px;
+    }
+    .ref-button {
+        font-size: 14px;
+        height: 35px;
+    }
+    .ref-c {
+        height: 180px;
+    }
+    .kon {
+        height: 600px;
+        font-size: 18px;
+    }
+    .kon-textarea {
+        width: 500px;
+        height: 120px;
+    }
+}
+.kontakt-card {
+    height: 600px;
+}
+
+@media(max-width: 650px) {
+    .header-logo-wrap {
+        margin: 0;
+    }
+    .header-logo {
+        margin-left: 5px;
+        height: 70px;
+        margin-top: 76px;
+    }
+    .prouzek {
+        height: 48px;
+    }
+    .dropdown-content {
+        font-size: 16px;
+        min-width: 200px;
+    }
+    .main-border-wrap { 
+        padding: 1em;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
+    }
+    .card h2 {
+        margin-top: 30px;
+    }
+    .main-border-wrap h1 {
+        margin-top: 15px;
+    }
+    .ref {
+        height: 240px;
+    }
+    .kon {
+        height: 570px;
+    }
+}
+
+@media(max-width: 480px) {
+    .header-logo {
+        height: 60px;
+        margin-top: 74px;
+    }
+    .prouzek {
+        height: 42px;
+    }
+    .dropdown .fa {
+        font-size: 25px;
+    }
+    .dropdown-content {
+        font-size: 14px;
+        min-width: 180px;
+    }
+    .main-border-wrap { 
+        padding: 0.5em;
+    }
+    .card {
+        width: 350px;
+        height: 230px;
+        padding: 8px;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
+    }
+    .card h2 {
+        margin-top: 20px;
+    }
+    .ref {
+        width: 300px;
+        height: 240px;
+    }
+    .ref-c {
+        height: 180px;
+    }
+    .kon {
+        height: 570px;
+        width: 360px;
+    }
+    .kon-textarea {
+        width: 330px;
+        height: 110px;
+    }
+    .kontakt-card {
+        width: 100%;
+        height: 450px;
+        padding: 0px;
+    }
+    .card h3 {
+        font-size: 20px;
+    }
+    .text-kontakt p,h3 {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 400px) { 
+    .main-border-wrap { 
+        font-size: 12px;
+    }
+    .card {
+        width: 230px;
+        height: 300px;
+    }
+    .card-long {
+        width: 430px;
+        height: 130px;
+    }
+    .ref {
+        width: 240px;
+        height: 260px;
+    }
+    .ref-c {
+        height: 160px;
+    }
+    .kon {
+        height: 550px;
+        width: 340px;
+    }
+    .kon-textarea {
+        width: 240px;
+        height: 100px;
+    }
+    .kon .ref-input {
+        width: 240px;
+    }
+    .kontakt-card {
+        width: 100%;
+        height: 350px;
+    }
+    .text-kontakt p,h3 {
+        font-size: 12px;
+    }
+}
